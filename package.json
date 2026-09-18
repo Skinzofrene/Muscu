@@ -1,0 +1,9 @@
+{
+  "name": "muscu-cycle",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Micro-séances au poids du corps, locales et hors ligne",
+  "scripts": { "start": "node server.mjs", "test": "node --test tests/*.test.mjs" },
+  "engines": { "node": ">=20" }
+}
