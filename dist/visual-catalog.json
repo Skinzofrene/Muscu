@@ -1,0 +1,1841 @@
+{
+  "catalog": {
+    "visual-pullup-pronated": {
+      "visualId": "visual-pullup-pronated",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/pull-up/frame-3.svg",
+        "./assets/exercises/workout-guide/pull-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Traction pronation",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pullup:stricte",
+        "pullup:pause-haute",
+        "pullup:intention-vitesse",
+        "pullup:rapide",
+        "pullup:explosive"
+      ]
+    },
+    "visual-pullup-assisted-two-feet": {
+      "visualId": "visual-pullup-assisted-two-feet",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Traction assistée — deux pieds sur support",
+      "parentVisualId": "visual-pullup-pronated",
+      "variantKeys": [
+        "pullup:stricte-endurance"
+      ]
+    },
+    "visual-pullup-assisted-one-foot": {
+      "visualId": "visual-pullup-assisted-one-foot",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Traction assistée — un pied sur support",
+      "parentVisualId": "visual-pullup-pronated",
+      "variantKeys": [
+        "pullup:angle-ajuste-endurance"
+      ]
+    },
+    "visual-pullup-chest-high": {
+      "visualId": "visual-pullup-chest-high",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/pull-up/frame-3.svg",
+        "./assets/exercises/workout-guide/pull-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Traction pronation poitrine haute",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pullup:poitrine-haute",
+        "pullup:poitrine-haute-explosive"
+      ]
+    },
+    "visual-pullup-asymmetric-assisted": {
+      "visualId": "visual-pullup-asymmetric-assisted",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/archer-pull-ups-start.webp",
+        "./assets/exercises/repdb/archer-pull-ups-peak.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Traction asymétrique assistée",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pullup:asymetrique-assistee"
+      ]
+    },
+    "visual-pullup-archer": {
+      "visualId": "visual-pullup-archer",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/archer-pull-ups-start.webp",
+        "./assets/exercises/repdb/archer-pull-ups-peak.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Traction archer",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pullup:archer-assistee",
+        "pullup:archer"
+      ]
+    },
+    "visual-pullup-one-arm-assisted": {
+      "visualId": "visual-pullup-one-arm-assisted",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Traction un bras assistée",
+      "parentVisualId": "visual-pullup-pronated",
+      "variantKeys": [
+        "pullup:un-bras-assistee"
+      ]
+    },
+    "visual-dead-hang": {
+      "visualId": "visual-dead-hang",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/dead-hang/frame-1.svg"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Suspension passive",
+      "parentVisualId": null,
+      "variantKeys": [
+        "hang:suspension"
+      ]
+    },
+    "visual-active-hang": {
+      "visualId": "visual-active-hang",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/active-hang/frame-1.svg"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Suspension active épaules",
+      "parentVisualId": null,
+      "variantKeys": [
+        "hang:active"
+      ]
+    },
+    "visual-asymmetric-hang": {
+      "visualId": "visual-asymmetric-hang",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Suspension asymétrique",
+      "parentVisualId": "visual-dead-hang",
+      "variantKeys": [
+        "hang:asymetrique"
+      ]
+    },
+    "visual-assisted-one-arm-hang": {
+      "visualId": "visual-assisted-one-arm-hang",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Suspension un bras assistée",
+      "parentVisualId": "visual-dead-hang",
+      "variantKeys": [
+        "hang:une-main-assistee",
+        "hang:un-bras-assistee"
+      ]
+    },
+    "visual-split-squat": {
+      "visualId": "visual-split-squat",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/split-squat-start.webp",
+        "./assets/exercises/repdb/split-squat-peak.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Split squat",
+      "parentVisualId": null,
+      "variantKeys": [
+        "split:split-squat",
+        "split:split-pause",
+        "split:split-endurance"
+      ]
+    },
+    "visual-bulgarian-split-squat": {
+      "visualId": "visual-bulgarian-split-squat",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/bulgarian-split-squat/frame-3.svg",
+        "./assets/exercises/workout-guide/bulgarian-split-squat/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Bulgarian split squat",
+      "parentVisualId": null,
+      "variantKeys": [
+        "split:bulgarian",
+        "split:bulgarian-pause",
+        "split:bulgarian-endurance"
+      ]
+    },
+    "visual-pistol-assisted": {
+      "visualId": "visual-pistol-assisted",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/assisted-pistol-squat/frame-3.svg",
+        "./assets/exercises/workout-guide/assisted-pistol-squat/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pistol assisté",
+      "parentVisualId": null,
+      "variantKeys": [
+        "split:pistol-assiste"
+      ]
+    },
+    "visual-pistol-to-support": {
+      "visualId": "visual-pistol-to-support",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/single-leg-box-squat/frame-3.svg",
+        "./assets/exercises/workout-guide/single-leg-box-squat/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pistol vers support",
+      "parentVisualId": null,
+      "variantKeys": [
+        "split:pistol-support"
+      ]
+    },
+    "visual-pistol-squat": {
+      "visualId": "visual-pistol-squat",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/pistol-squat/frame-3.svg",
+        "./assets/exercises/workout-guide/pistol-squat/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pistol squat",
+      "parentVisualId": null,
+      "variantKeys": [
+        "split:pistol",
+        "split:pistol-pause"
+      ]
+    },
+    "visual-bodyweight-squat": {
+      "visualId": "visual-bodyweight-squat",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/bodyweight-squat/frame-3.svg",
+        "./assets/exercises/workout-guide/bodyweight-squat/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Squat au poids du corps",
+      "parentVisualId": null,
+      "variantKeys": [
+        "split:squat-endurance",
+        "split:remontee-rapide"
+      ]
+    },
+    "visual-jump-squat": {
+      "visualId": "visual-jump-squat",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/jump-squat/frame-3.svg",
+        "./assets/exercises/workout-guide/jump-squat/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Squat jump",
+      "parentVisualId": null,
+      "variantKeys": [
+        "split:petit-squat-jump",
+        "split:squat-jump",
+        "split:squat-jump-max"
+      ]
+    },
+    "visual-alternating-split-jump": {
+      "visualId": "visual-alternating-split-jump",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Split jump alterné",
+      "parentVisualId": "visual-split-squat",
+      "variantKeys": [
+        "split:sauts-replaces"
+      ]
+    },
+    "visual-unilateral-jump": {
+      "visualId": "visual-unilateral-jump",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Saut vertical unipodal contrôlé",
+      "parentVisualId": "visual-jump-squat",
+      "variantKeys": [
+        "split:unilateral-progressif"
+      ]
+    },
+    "visual-glute-split-squat": {
+      "visualId": "visual-glute-split-squat",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/split-squat-start.webp",
+        "./assets/exercises/repdb/split-squat-peak.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Split squat orientation fessiers",
+      "parentVisualId": null,
+      "variantKeys": [
+        "gluteSplit:split-squat",
+        "gluteSplit:split-pause"
+      ]
+    },
+    "visual-glute-bulgarian": {
+      "visualId": "visual-glute-bulgarian",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/bulgarian-split-squat/frame-3.svg",
+        "./assets/exercises/workout-guide/bulgarian-split-squat/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Bulgarian orientation fessiers",
+      "parentVisualId": null,
+      "variantKeys": [
+        "gluteSplit:bulgarian",
+        "gluteSplit:bulgarian-pause"
+      ]
+    },
+    "visual-single-leg-calf-raise": {
+      "visualId": "visual-single-leg-calf-raise",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/single-leg-calf-raise/frame-3.svg",
+        "./assets/exercises/workout-guide/single-leg-calf-raise/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Élévation mollet une jambe",
+      "parentVisualId": null,
+      "variantKeys": [
+        "calf:base",
+        "calf:pause-etirement",
+        "calf:descente-lente",
+        "calf:entretien-unilateral"
+      ]
+    },
+    "visual-pushup-classic": {
+      "visualId": "visual-pushup-classic",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/push-up/frame-3.svg",
+        "./assets/exercises/workout-guide/push-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pompe classique",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pushup:classique",
+        "pushup:pause-basse",
+        "pushup:pause-endurance",
+        "pushup:rapide-sol"
+      ]
+    },
+    "visual-incline-pushup": {
+      "visualId": "visual-incline-pushup",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Pompe inclinée — endurance",
+      "parentVisualId": "visual-pushup-classic",
+      "variantKeys": [
+        "pushup:classique-endurance"
+      ]
+    },
+    "visual-pushup-feet-elevated": {
+      "visualId": "visual-pushup-feet-elevated",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/decline-push-up/frame-3.svg",
+        "./assets/exercises/workout-guide/decline-push-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pompe pieds surélevés",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pushup:pieds-sureleves",
+        "pushup:pieds-sureleves-pause"
+      ]
+    },
+    "visual-pushup-archer": {
+      "visualId": "visual-pushup-archer",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/archer-push-up/frame-1.svg",
+        "./assets/exercises/workout-guide/archer-push-up/frame-2.svg",
+        "./assets/exercises/workout-guide/archer-push-up/frame-3.svg"
+      ],
+      "animationMode": "DYNAMIC_COMPLEX",
+      "sequence": [
+        0,
+        1,
+        2
+      ],
+      "frameDuration": 1050,
+      "alt": "Pompe archer",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pushup:archer-assistee",
+        "pushup:archer"
+      ]
+    },
+    "visual-pushup-one-arm": {
+      "visualId": "visual-pushup-one-arm",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "free-exercise-db",
+      "frames": [
+        "./assets/exercises/free-exercise-db/Single-Arm_Push-Up/0.jpg",
+        "./assets/exercises/free-exercise-db/Single-Arm_Push-Up/1.jpg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pompe une main",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pushup:une-main-assistee",
+        "pushup:une-main"
+      ]
+    },
+    "visual-pushup-explosive": {
+      "visualId": "visual-pushup-explosive",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/explosive-push-up/frame-1.svg",
+        "./assets/exercises/workout-guide/explosive-push-up/frame-3.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pompe explosive",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pushup:leger-decollage",
+        "pushup:explosive",
+        "pushup:decollage-franc",
+        "pushup:avancee"
+      ]
+    },
+    "visual-parallel-bar-dip": {
+      "visualId": "visual-parallel-bar-dip",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/dip/frame-1.svg",
+        "./assets/exercises/workout-guide/dip/frame-3.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Dips aux barres parallèles",
+      "parentVisualId": null,
+      "variantKeys": [
+        "dip:stricts",
+        "dip:volume",
+        "dip:pause-basse",
+        "dip:lent-pause",
+        "dip:amplitude-propre",
+        "dip:entretien"
+      ]
+    },
+    "visual-inverted-row": {
+      "visualId": "visual-inverted-row",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/inverted-row/frame-3.svg",
+        "./assets/exercises/workout-guide/inverted-row/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Rowing inversé incliné",
+      "parentVisualId": null,
+      "variantKeys": [
+        "row:actuel",
+        "row:accessible-endurance"
+      ]
+    },
+    "visual-inverted-row-horizontal": {
+      "visualId": "visual-inverted-row-horizontal",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/inverted-row/frame-3.svg",
+        "./assets/exercises/workout-guide/inverted-row/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Rowing inversé horizontal",
+      "parentVisualId": null,
+      "variantKeys": [
+        "row:plus-horizontal",
+        "row:presque-horizontal",
+        "row:pause-poitrine",
+        "row:angle-endurance",
+        "row:rapide",
+        "row:explosif",
+        "row:poitrine-haute"
+      ]
+    },
+    "visual-inverted-row-feet-elevated": {
+      "visualId": "visual-inverted-row-feet-elevated",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Rowing inversé pieds surélevés",
+      "parentVisualId": "visual-inverted-row",
+      "variantKeys": [
+        "row:pieds-sureleves"
+      ]
+    },
+    "visual-inverted-row-asymmetric": {
+      "visualId": "visual-inverted-row-asymmetric",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Rowing inversé asymétrique",
+      "parentVisualId": "visual-inverted-row",
+      "variantKeys": [
+        "row:asymetrique"
+      ]
+    },
+    "visual-inverted-row-archer": {
+      "visualId": "visual-inverted-row-archer",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Archer row",
+      "parentVisualId": "visual-inverted-row",
+      "variantKeys": [
+        "row:archer"
+      ]
+    },
+    "visual-inverted-row-one-arm-assisted": {
+      "visualId": "visual-inverted-row-one-arm-assisted",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Rowing unilatéral assisté",
+      "parentVisualId": "visual-inverted-row",
+      "variantKeys": [
+        "row:unilateral-assiste"
+      ]
+    },
+    "visual-captains-chair-knee-raise": {
+      "visualId": "visual-captains-chair-knee-raise",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/captains-chair-knee-raise/frame-3.svg",
+        "./assets/exercises/workout-guide/captains-chair-knee-raise/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Relevé de genoux chaise romaine",
+      "parentVisualId": null,
+      "variantKeys": [
+        "leg:genoux"
+      ]
+    },
+    "visual-captains-chair-leg-raise": {
+      "visualId": "visual-captains-chair-leg-raise",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/captains-chair-leg-raise-start.webp",
+        "./assets/exercises/repdb/captains-chair-leg-raise-peak.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Relevé de jambes chaise romaine",
+      "parentVisualId": null,
+      "variantKeys": [
+        "leg:jambes-chaise",
+        "leg:pause-haute",
+        "leg:descente-controlee"
+      ]
+    },
+    "visual-hanging-knee-raise": {
+      "visualId": "visual-hanging-knee-raise",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/hanging-knee-raise/frame-3.svg",
+        "./assets/exercises/workout-guide/hanging-knee-raise/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Relevé de genoux suspendu",
+      "parentVisualId": null,
+      "variantKeys": [
+        "leg:genoux-suspendus"
+      ]
+    },
+    "visual-hanging-leg-raise": {
+      "visualId": "visual-hanging-leg-raise",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/hanging-leg-raise/frame-3.svg",
+        "./assets/exercises/workout-guide/hanging-leg-raise/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Relevé de jambes suspendu",
+      "parentVisualId": null,
+      "variantKeys": [
+        "leg:jambes-suspendues"
+      ]
+    },
+    "visual-toes-to-bar": {
+      "visualId": "visual-toes-to-bar",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/toes-to-bar-start.webp",
+        "./assets/exercises/repdb/toes-to-bar-peak.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Montée haute suspendue",
+      "parentVisualId": null,
+      "variantKeys": [
+        "leg:montee-haute"
+      ]
+    },
+    "visual-glute-bridge": {
+      "visualId": "visual-glute-bridge",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/glute-bridge/frame-3.svg",
+        "./assets/exercises/workout-guide/glute-bridge/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pont fessier deux jambes",
+      "parentVisualId": null,
+      "variantKeys": [
+        "bridge:deux-jambes"
+      ]
+    },
+    "visual-single-leg-glute-bridge": {
+      "visualId": "visual-single-leg-glute-bridge",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/single-leg-glute-bridge/frame-3.svg",
+        "./assets/exercises/workout-guide/single-leg-glute-bridge/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pont fessier une jambe",
+      "parentVisualId": null,
+      "variantKeys": [
+        "bridge:une-jambe",
+        "bridge:pause-haute",
+        "bridge:entretien",
+        "bridge:une-jambe-endurance"
+      ]
+    },
+    "visual-long-lever-glute-bridge": {
+      "visualId": "visual-long-lever-glute-bridge",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Pont fessier levier long",
+      "parentVisualId": "visual-glute-bridge",
+      "variantKeys": [
+        "bridge:levier-long",
+        "bridge:levier-long-pause"
+      ]
+    },
+    "visual-hamstring-walkout": {
+      "visualId": "visual-hamstring-walkout",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/lying-hamstring-walkout/frame-3.svg",
+        "./assets/exercises/workout-guide/lying-hamstring-walkout/frame-2.svg",
+        "./assets/exercises/workout-guide/lying-hamstring-walkout/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_COMPLEX",
+      "sequence": [
+        0,
+        1,
+        2
+      ],
+      "frameDuration": 1050,
+      "alt": "Hamstring walkout",
+      "parentVisualId": null,
+      "variantKeys": [
+        "bridge:walkout-endurance"
+      ]
+    },
+    "visual-tibialis-wall-raise": {
+      "visualId": "visual-tibialis-wall-raise",
+      "source": "custom",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "frames": [
+        "./assets/exercises/custom/tibialis-wall-low.webp",
+        "./assets/exercises/custom/tibialis-wall-high.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "alt": "Relevé tibial au mur, position basse puis pointes relevées",
+      "originalFiles": [
+        "Standing Tibialis Raise Wall Supported.png",
+        "Standing Tibialis Raise Wall Supported2.png"
+      ],
+      "frameDuration": 1050,
+      "parentVisualId": null,
+      "variantKeys": [
+        "tibialis:mur-proche",
+        "tibialis:pieds-eloignes",
+        "tibialis:angle-important"
+      ]
+    },
+    "visual-tibialis-single-leg": {
+      "visualId": "visual-tibialis-single-leg",
+      "source": "custom",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "frames": [
+        "./assets/exercises/custom/tibialis-wall-low.webp",
+        "./assets/exercises/custom/tibialis-wall-high.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "alt": "Relevé tibial une jambe au mur, position basse puis pointes relevées",
+      "originalFiles": [
+        "Standing Tibialis Raise Wall Supported.png",
+        "Standing Tibialis Raise Wall Supported2.png"
+      ],
+      "frameDuration": 1050,
+      "parentVisualId": null,
+      "variantKeys": [
+        "tibialis:une-jambe-assistee",
+        "tibialis:une-jambe"
+      ]
+    },
+    "visual-pike-pushup": {
+      "visualId": "visual-pike-pushup",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/pike-push-up/frame-3.svg",
+        "./assets/exercises/workout-guide/pike-push-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pike push-up",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pike:pike",
+        "pike:pike-endurance",
+        "pike:pike-rapide"
+      ]
+    },
+    "visual-pike-pushup-vertical": {
+      "visualId": "visual-pike-pushup-vertical",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/pike-push-up/frame-3.svg",
+        "./assets/exercises/workout-guide/pike-push-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pike push-up plus verticale",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pike:plus-verticale",
+        "pike:pike-exigeante-endurance"
+      ]
+    },
+    "visual-pike-pushup-plyometric": {
+      "visualId": "visual-pike-pushup-plyometric",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Pike plyométrique — mains décollées",
+      "parentVisualId": "visual-pike-pushup",
+      "variantKeys": [
+        "pike:pike-explosive"
+      ]
+    },
+    "visual-elevated-pike-pushup": {
+      "visualId": "visual-elevated-pike-pushup",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/feet-elevated-pike-push-up/frame-3.svg",
+        "./assets/exercises/workout-guide/feet-elevated-pike-push-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Pike push-up pieds surélevés",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pike:pieds-sureleves"
+      ]
+    },
+    "visual-wall-handstand-hold": {
+      "visualId": "visual-wall-handstand-hold",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/wall-handstand-push-up/frame-3.svg"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Handstand au mur",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pike:handstand-mur"
+      ]
+    },
+    "visual-wall-hspu": {
+      "visualId": "visual-wall-hspu",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/wall-handstand-push-up/frame-3.svg",
+        "./assets/exercises/workout-guide/wall-handstand-push-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "HSPU au mur",
+      "parentVisualId": null,
+      "variantKeys": [
+        "pike:hspu-partielle",
+        "pike:hspu-mur"
+      ]
+    },
+    "visual-scapular-pullup": {
+      "visualId": "visual-scapular-pullup",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/scapular-pull-up/frame-3.svg",
+        "./assets/exercises/workout-guide/scapular-pull-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Scapular pull-up",
+      "parentVisualId": null,
+      "variantKeys": [
+        "scapPull:controle",
+        "scapPull:pause",
+        "scapPull:lent"
+      ]
+    },
+    "visual-active-scapular-hold": {
+      "visualId": "visual-active-scapular-hold",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/scapular-pull-up/frame-1.svg"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Maintien scapulaire actif",
+      "parentVisualId": null,
+      "variantKeys": [
+        "scapPull:maintien"
+      ]
+    },
+    "visual-scapular-pushup": {
+      "visualId": "visual-scapular-pushup",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/scapular-push-up/frame-3.svg",
+        "./assets/exercises/workout-guide/scapular-push-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Scapular push-up / plank plus",
+      "parentVisualId": null,
+      "variantKeys": [
+        "scapPush:scapular",
+        "scapPush:plank-plus"
+      ]
+    },
+    "visual-wall-slide": {
+      "visualId": "visual-wall-slide",
+      "resolutionStatus": "TEXT_SUFFICIENT",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Wall slide",
+      "parentVisualId": null,
+      "variantKeys": [
+        "scapPush:wall-slide"
+      ]
+    },
+    "visual-front-plank": {
+      "visualId": "visual-front-plank",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/plank/frame-1.svg"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Planche avant",
+      "parentVisualId": null,
+      "variantKeys": [
+        "hollow:planche"
+      ]
+    },
+    "visual-long-lever-plank": {
+      "visualId": "visual-long-lever-plank",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Planche levier long",
+      "parentVisualId": "visual-front-plank",
+      "variantKeys": [
+        "hollow:levier-long"
+      ]
+    },
+    "visual-hollow-tuck": {
+      "visualId": "visual-hollow-tuck",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Hollow tuck",
+      "parentVisualId": "visual-hollow-body",
+      "variantKeys": [
+        "hollow:hollow-tuck"
+      ]
+    },
+    "visual-hollow-one-leg": {
+      "visualId": "visual-hollow-one-leg",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Hollow une jambe",
+      "parentVisualId": "visual-hollow-body",
+      "variantKeys": [
+        "hollow:une-jambe"
+      ]
+    },
+    "visual-hollow-body": {
+      "visualId": "visual-hollow-body",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/hollow-body-hold/frame-1.svg"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Hollow complet",
+      "parentVisualId": null,
+      "variantKeys": [
+        "hollow:complet"
+      ]
+    },
+    "visual-hamstring-walkout-bilateral": {
+      "visualId": "visual-hamstring-walkout-bilateral",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/lying-hamstring-walkout/frame-3.svg",
+        "./assets/exercises/workout-guide/lying-hamstring-walkout/frame-2.svg",
+        "./assets/exercises/workout-guide/lying-hamstring-walkout/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_COMPLEX",
+      "sequence": [
+        0,
+        1,
+        2
+      ],
+      "frameDuration": 1050,
+      "alt": "Hamstring walkout bilatéral",
+      "parentVisualId": null,
+      "variantKeys": [
+        "hamstring:court",
+        "hamstring:complet",
+        "hamstring:pause",
+        "hamstring:lent"
+      ]
+    },
+    "visual-hamstring-walkout-unilateral": {
+      "visualId": "visual-hamstring-walkout-unilateral",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Hamstring walkout unilatéral",
+      "parentVisualId": "visual-glute-bridge",
+      "variantKeys": [
+        "hamstring:unilateral-assiste",
+        "hamstring:unilateral"
+      ]
+    },
+    "visual-prone-w": {
+      "visualId": "visual-prone-w",
+      "resolutionStatus": "TEXT_SUFFICIENT",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Prone W",
+      "parentVisualId": null,
+      "variantKeys": [
+        "rearShoulder:prone-w"
+      ]
+    },
+    "visual-reverse-snow-angel": {
+      "visualId": "visual-reverse-snow-angel",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/reverse-snow-angel/frame-3.svg",
+        "./assets/exercises/workout-guide/reverse-snow-angel/frame-2.svg",
+        "./assets/exercises/workout-guide/reverse-snow-angel/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_COMPLEX",
+      "sequence": [
+        0,
+        1,
+        2
+      ],
+      "frameDuration": 1050,
+      "alt": "Reverse snow angel",
+      "parentVisualId": null,
+      "variantKeys": [
+        "rearShoulder:snow-angel"
+      ]
+    },
+    "visual-prone-ytw": {
+      "visualId": "visual-prone-ytw",
+      "resolutionStatus": "TEXT_SUFFICIENT",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Y-T-W ventral",
+      "parentVisualId": null,
+      "variantKeys": [
+        "rearShoulder:ytw",
+        "rearShoulder:pauses"
+      ]
+    },
+    "visual-knee-side-plank": {
+      "visualId": "visual-knee-side-plank",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Side plank sur les genoux",
+      "parentVisualId": "visual-side-plank",
+      "variantKeys": [
+        "sidePlank:genoux"
+      ]
+    },
+    "visual-side-plank": {
+      "visualId": "visual-side-plank",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/side-plank/frame-1.svg"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Side plank complet",
+      "parentVisualId": null,
+      "variantKeys": [
+        "sidePlank:complet",
+        "sidePlank:empile-pause"
+      ]
+    },
+    "visual-assisted-star-side-plank": {
+      "visualId": "visual-assisted-star-side-plank",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/side-plank-leg-lift-hold-main.webp"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Star side plank assisté",
+      "parentVisualId": null,
+      "variantKeys": [
+        "sidePlank:star-assiste"
+      ]
+    },
+    "visual-star-side-plank": {
+      "visualId": "visual-star-side-plank",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/side-plank-leg-lift-hold-main.webp"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Star side plank",
+      "parentVisualId": null,
+      "variantKeys": [
+        "sidePlank:star"
+      ]
+    },
+    "visual-side-lying-adduction": {
+      "visualId": "visual-side-lying-adduction",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/side-lying-hip-adduction-start.webp",
+        "./assets/exercises/repdb/side-lying-hip-adduction-peak.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Adduction allongée sur le côté",
+      "parentVisualId": null,
+      "variantKeys": [
+        "adductor:allonge"
+      ]
+    },
+    "visual-copenhagen-short": {
+      "visualId": "visual-copenhagen-short",
+      "source": "custom",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "frames": [
+        "./assets/exercises/custom/copenhagen-high.webp"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "alt": "Copenhagen levier court, bassin haut en position de maintien",
+      "originalFiles": [
+        "Copenhagen1.png"
+      ],
+      "frameDuration": 1050,
+      "parentVisualId": null,
+      "variantKeys": [
+        "adductor:court"
+      ]
+    },
+    "visual-copenhagen-long": {
+      "visualId": "visual-copenhagen-long",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/copenhagen-plank/frame-1.svg"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Copenhagen levier long",
+      "parentVisualId": null,
+      "variantKeys": [
+        "adductor:plus-long",
+        "adductor:complet"
+      ]
+    },
+    "visual-copenhagen-dynamic": {
+      "visualId": "visual-copenhagen-dynamic",
+      "source": "custom",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "frames": [
+        "./assets/exercises/custom/copenhagen-low.webp",
+        "./assets/exercises/custom/copenhagen-high.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "alt": "Copenhagen dynamique, bassin bas puis bassin haut",
+      "originalFiles": [
+        "Copenhagen2.png",
+        "Copenhagen1.png"
+      ],
+      "frameDuration": 1050,
+      "parentVisualId": null,
+      "variantKeys": [
+        "adductor:dynamique"
+      ]
+    },
+    "visual-bird-dog": {
+      "visualId": "visual-bird-dog",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/bird-dog/frame-1.svg",
+        "./assets/exercises/workout-guide/bird-dog/frame-2.svg",
+        "./assets/exercises/workout-guide/bird-dog/frame-3.svg"
+      ],
+      "animationMode": "DYNAMIC_COMPLEX",
+      "sequence": [
+        0,
+        1,
+        2
+      ],
+      "frameDuration": 1050,
+      "alt": "Bird dog",
+      "parentVisualId": null,
+      "variantKeys": [
+        "antiRotation:bird-dog"
+      ]
+    },
+    "visual-shoulder-taps": {
+      "visualId": "visual-shoulder-taps",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/plank-shoulder-tap/frame-1.svg",
+        "./assets/exercises/workout-guide/plank-shoulder-tap/frame-2.svg",
+        "./assets/exercises/workout-guide/plank-shoulder-tap/frame-3.svg"
+      ],
+      "animationMode": "DYNAMIC_COMPLEX",
+      "sequence": [
+        0,
+        1,
+        2
+      ],
+      "frameDuration": 1050,
+      "alt": "High plank shoulder taps",
+      "parentVisualId": null,
+      "variantKeys": [
+        "antiRotation:shoulder-taps",
+        "antiRotation:pieds-rapproches"
+      ]
+    },
+    "visual-plank-arm-reach": {
+      "visualId": "visual-plank-arm-reach",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Planche avec bras devant",
+      "parentVisualId": "visual-shoulder-taps",
+      "variantKeys": [
+        "antiRotation:bras-devant"
+      ]
+    },
+    "visual-advanced-asymmetric-plank": {
+      "visualId": "visual-advanced-asymmetric-plank",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Planche haute — bras et jambe opposés",
+      "parentVisualId": "visual-shoulder-taps",
+      "variantKeys": [
+        "antiRotation:asymetrique"
+      ]
+    },
+    "visual-side-lying-abduction": {
+      "visualId": "visual-side-lying-abduction",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/side-lying-hip-abduction/frame-3.svg",
+        "./assets/exercises/workout-guide/side-lying-hip-abduction/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Abduction allongée sur le côté",
+      "parentVisualId": null,
+      "variantKeys": [
+        "abductor:laterale",
+        "abductor:pause"
+      ]
+    },
+    "visual-knee-side-plank-abduction": {
+      "visualId": "visual-knee-side-plank-abduction",
+      "resolutionStatus": "USE_PARENT_VISUAL",
+      "source": null,
+      "frames": [],
+      "animationMode": "STATIC",
+      "sequence": [],
+      "frameDuration": 1050,
+      "alt": "Side plank genou avec abduction",
+      "parentVisualId": "visual-side-plank",
+      "variantKeys": [
+        "abductor:side-genou"
+      ]
+    },
+    "visual-side-plank-abduction": {
+      "visualId": "visual-side-plank-abduction",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/side-plank-leg-lift-start.webp",
+        "./assets/exercises/repdb/side-plank-leg-lift-peak.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Side plank complet avec abduction",
+      "parentVisualId": null,
+      "variantKeys": [
+        "abductor:side-complet",
+        "abductor:avancee"
+      ]
+    },
+    "visual-manual-neck-isometrics": {
+      "visualId": "visual-manual-neck-isometrics",
+      "resolutionStatus": "MATCH_ACCEPTABLE",
+      "source": "repdb",
+      "frames": [
+        "./assets/exercises/repdb/isometric-neck-side-main.webp"
+      ],
+      "animationMode": "STATIC",
+      "sequence": [
+        0
+      ],
+      "frameDuration": 1050,
+      "alt": "Isométriques manuels du cou",
+      "parentVisualId": null,
+      "variantKeys": [
+        "neck:main"
+      ]
+    },
+    "visual-chinup-supinated": {
+      "visualId": "visual-chinup-supinated",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/chin-up/frame-3.svg",
+        "./assets/exercises/workout-guide/chin-up/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Chin-up supination",
+      "parentVisualId": null,
+      "variantKeys": [
+        "chinup:negatif",
+        "chinup:strict",
+        "chinup:pause-haute",
+        "chinup:controle"
+      ]
+    },
+    "visual-reverse-crunch-flexed": {
+      "visualId": "visual-reverse-crunch-flexed",
+      "resolutionStatus": "MATCH_EXACT",
+      "source": "workout-guide",
+      "frames": [
+        "./assets/exercises/workout-guide/reverse-crunch/frame-3.svg",
+        "./assets/exercises/workout-guide/reverse-crunch/frame-1.svg"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "frameDuration": 1050,
+      "alt": "Reverse crunch genoux fléchis",
+      "parentVisualId": null,
+      "variantKeys": [
+        "reverseCrunch:genoux-flechis",
+        "reverseCrunch:90-90",
+        "reverseCrunch:pause-haute"
+      ]
+    },
+    "visual-reverse-crunch-long-lever": {
+      "visualId": "visual-reverse-crunch-long-lever",
+      "source": "custom",
+      "resolutionStatus": "MATCH_EXACT",
+      "frames": [
+        "./assets/exercises/custom/reverse-crunch-long-low.webp",
+        "./assets/exercises/custom/reverse-crunch-long-high.webp"
+      ],
+      "animationMode": "DYNAMIC_SIMPLE",
+      "sequence": [
+        0,
+        1
+      ],
+      "alt": "Reverse crunch jambes tendues, bassin posé puis sacrum décollé",
+      "originalFiles": [
+        "StraightLegReverseCrunch.png",
+        "StraightLegReverseCrunch2.png"
+      ],
+      "frameDuration": 1050,
+      "parentVisualId": null,
+      "variantKeys": [
+        "reverseCrunch:levier-allonge",
+        "reverseCrunch:levier-allonge-pause"
+      ]
+    }
+  },
+  "variantIndex": {
+    "pullup:stricte": "visual-pullup-pronated",
+    "pullup:pause-haute": "visual-pullup-pronated",
+    "pullup:intention-vitesse": "visual-pullup-pronated",
+    "pullup:rapide": "visual-pullup-pronated",
+    "pullup:explosive": "visual-pullup-pronated",
+    "pullup:stricte-endurance": "visual-pullup-assisted-two-feet",
+    "pullup:angle-ajuste-endurance": "visual-pullup-assisted-one-foot",
+    "pullup:poitrine-haute": "visual-pullup-chest-high",
+    "pullup:poitrine-haute-explosive": "visual-pullup-chest-high",
+    "pullup:asymetrique-assistee": "visual-pullup-asymmetric-assisted",
+    "pullup:archer-assistee": "visual-pullup-archer",
+    "pullup:archer": "visual-pullup-archer",
+    "pullup:un-bras-assistee": "visual-pullup-one-arm-assisted",
+    "hang:suspension": "visual-dead-hang",
+    "hang:active": "visual-active-hang",
+    "hang:asymetrique": "visual-asymmetric-hang",
+    "hang:une-main-assistee": "visual-assisted-one-arm-hang",
+    "hang:un-bras-assistee": "visual-assisted-one-arm-hang",
+    "split:split-squat": "visual-split-squat",
+    "split:split-pause": "visual-split-squat",
+    "split:split-endurance": "visual-split-squat",
+    "split:bulgarian": "visual-bulgarian-split-squat",
+    "split:bulgarian-pause": "visual-bulgarian-split-squat",
+    "split:bulgarian-endurance": "visual-bulgarian-split-squat",
+    "split:pistol-assiste": "visual-pistol-assisted",
+    "split:pistol-support": "visual-pistol-to-support",
+    "split:pistol": "visual-pistol-squat",
+    "split:pistol-pause": "visual-pistol-squat",
+    "split:squat-endurance": "visual-bodyweight-squat",
+    "split:remontee-rapide": "visual-bodyweight-squat",
+    "split:petit-squat-jump": "visual-jump-squat",
+    "split:squat-jump": "visual-jump-squat",
+    "split:squat-jump-max": "visual-jump-squat",
+    "split:sauts-replaces": "visual-alternating-split-jump",
+    "split:unilateral-progressif": "visual-unilateral-jump",
+    "gluteSplit:split-squat": "visual-glute-split-squat",
+    "gluteSplit:split-pause": "visual-glute-split-squat",
+    "gluteSplit:bulgarian": "visual-glute-bulgarian",
+    "gluteSplit:bulgarian-pause": "visual-glute-bulgarian",
+    "calf:base": "visual-single-leg-calf-raise",
+    "calf:pause-etirement": "visual-single-leg-calf-raise",
+    "calf:descente-lente": "visual-single-leg-calf-raise",
+    "calf:entretien-unilateral": "visual-single-leg-calf-raise",
+    "pushup:classique": "visual-pushup-classic",
+    "pushup:pause-basse": "visual-pushup-classic",
+    "pushup:pause-endurance": "visual-pushup-classic",
+    "pushup:rapide-sol": "visual-pushup-classic",
+    "pushup:classique-endurance": "visual-incline-pushup",
+    "pushup:pieds-sureleves": "visual-pushup-feet-elevated",
+    "pushup:pieds-sureleves-pause": "visual-pushup-feet-elevated",
+    "pushup:archer-assistee": "visual-pushup-archer",
+    "pushup:archer": "visual-pushup-archer",
+    "pushup:une-main-assistee": "visual-pushup-one-arm",
+    "pushup:une-main": "visual-pushup-one-arm",
+    "pushup:leger-decollage": "visual-pushup-explosive",
+    "pushup:explosive": "visual-pushup-explosive",
+    "pushup:decollage-franc": "visual-pushup-explosive",
+    "pushup:avancee": "visual-pushup-explosive",
+    "dip:stricts": "visual-parallel-bar-dip",
+    "dip:volume": "visual-parallel-bar-dip",
+    "dip:pause-basse": "visual-parallel-bar-dip",
+    "dip:lent-pause": "visual-parallel-bar-dip",
+    "dip:amplitude-propre": "visual-parallel-bar-dip",
+    "dip:entretien": "visual-parallel-bar-dip",
+    "row:actuel": "visual-inverted-row",
+    "row:accessible-endurance": "visual-inverted-row",
+    "row:plus-horizontal": "visual-inverted-row-horizontal",
+    "row:presque-horizontal": "visual-inverted-row-horizontal",
+    "row:pause-poitrine": "visual-inverted-row-horizontal",
+    "row:angle-endurance": "visual-inverted-row-horizontal",
+    "row:rapide": "visual-inverted-row-horizontal",
+    "row:explosif": "visual-inverted-row-horizontal",
+    "row:poitrine-haute": "visual-inverted-row-horizontal",
+    "row:pieds-sureleves": "visual-inverted-row-feet-elevated",
+    "row:asymetrique": "visual-inverted-row-asymmetric",
+    "row:archer": "visual-inverted-row-archer",
+    "row:unilateral-assiste": "visual-inverted-row-one-arm-assisted",
+    "leg:genoux": "visual-captains-chair-knee-raise",
+    "leg:jambes-chaise": "visual-captains-chair-leg-raise",
+    "leg:pause-haute": "visual-captains-chair-leg-raise",
+    "leg:descente-controlee": "visual-captains-chair-leg-raise",
+    "leg:genoux-suspendus": "visual-hanging-knee-raise",
+    "leg:jambes-suspendues": "visual-hanging-leg-raise",
+    "leg:montee-haute": "visual-toes-to-bar",
+    "bridge:deux-jambes": "visual-glute-bridge",
+    "bridge:une-jambe": "visual-single-leg-glute-bridge",
+    "bridge:pause-haute": "visual-single-leg-glute-bridge",
+    "bridge:entretien": "visual-single-leg-glute-bridge",
+    "bridge:une-jambe-endurance": "visual-single-leg-glute-bridge",
+    "bridge:levier-long": "visual-long-lever-glute-bridge",
+    "bridge:levier-long-pause": "visual-long-lever-glute-bridge",
+    "bridge:walkout-endurance": "visual-hamstring-walkout",
+    "tibialis:mur-proche": "visual-tibialis-wall-raise",
+    "tibialis:pieds-eloignes": "visual-tibialis-wall-raise",
+    "tibialis:angle-important": "visual-tibialis-wall-raise",
+    "tibialis:une-jambe-assistee": "visual-tibialis-single-leg",
+    "tibialis:une-jambe": "visual-tibialis-single-leg",
+    "pike:pike": "visual-pike-pushup",
+    "pike:pike-endurance": "visual-pike-pushup",
+    "pike:pike-rapide": "visual-pike-pushup",
+    "pike:plus-verticale": "visual-pike-pushup-vertical",
+    "pike:pike-exigeante-endurance": "visual-pike-pushup-vertical",
+    "pike:pike-explosive": "visual-pike-pushup-plyometric",
+    "pike:pieds-sureleves": "visual-elevated-pike-pushup",
+    "pike:handstand-mur": "visual-wall-handstand-hold",
+    "pike:hspu-partielle": "visual-wall-hspu",
+    "pike:hspu-mur": "visual-wall-hspu",
+    "scapPull:controle": "visual-scapular-pullup",
+    "scapPull:pause": "visual-scapular-pullup",
+    "scapPull:lent": "visual-scapular-pullup",
+    "scapPull:maintien": "visual-active-scapular-hold",
+    "scapPush:scapular": "visual-scapular-pushup",
+    "scapPush:plank-plus": "visual-scapular-pushup",
+    "scapPush:wall-slide": "visual-wall-slide",
+    "hollow:planche": "visual-front-plank",
+    "hollow:levier-long": "visual-long-lever-plank",
+    "hollow:hollow-tuck": "visual-hollow-tuck",
+    "hollow:une-jambe": "visual-hollow-one-leg",
+    "hollow:complet": "visual-hollow-body",
+    "hamstring:court": "visual-hamstring-walkout-bilateral",
+    "hamstring:complet": "visual-hamstring-walkout-bilateral",
+    "hamstring:pause": "visual-hamstring-walkout-bilateral",
+    "hamstring:lent": "visual-hamstring-walkout-bilateral",
+    "hamstring:unilateral-assiste": "visual-hamstring-walkout-unilateral",
+    "hamstring:unilateral": "visual-hamstring-walkout-unilateral",
+    "rearShoulder:prone-w": "visual-prone-w",
+    "rearShoulder:snow-angel": "visual-reverse-snow-angel",
+    "rearShoulder:ytw": "visual-prone-ytw",
+    "rearShoulder:pauses": "visual-prone-ytw",
+    "sidePlank:genoux": "visual-knee-side-plank",
+    "sidePlank:complet": "visual-side-plank",
+    "sidePlank:empile-pause": "visual-side-plank",
+    "sidePlank:star-assiste": "visual-assisted-star-side-plank",
+    "sidePlank:star": "visual-star-side-plank",
+    "adductor:allonge": "visual-side-lying-adduction",
+    "adductor:court": "visual-copenhagen-short",
+    "adductor:plus-long": "visual-copenhagen-long",
+    "adductor:complet": "visual-copenhagen-long",
+    "adductor:dynamique": "visual-copenhagen-dynamic",
+    "antiRotation:bird-dog": "visual-bird-dog",
+    "antiRotation:shoulder-taps": "visual-shoulder-taps",
+    "antiRotation:pieds-rapproches": "visual-shoulder-taps",
+    "antiRotation:bras-devant": "visual-plank-arm-reach",
+    "antiRotation:asymetrique": "visual-advanced-asymmetric-plank",
+    "abductor:laterale": "visual-side-lying-abduction",
+    "abductor:pause": "visual-side-lying-abduction",
+    "abductor:side-genou": "visual-knee-side-plank-abduction",
+    "abductor:side-complet": "visual-side-plank-abduction",
+    "abductor:avancee": "visual-side-plank-abduction",
+    "neck:main": "visual-manual-neck-isometrics",
+    "chinup:negatif": "visual-chinup-supinated",
+    "chinup:strict": "visual-chinup-supinated",
+    "chinup:pause-haute": "visual-chinup-supinated",
+    "chinup:controle": "visual-chinup-supinated",
+    "reverseCrunch:genoux-flechis": "visual-reverse-crunch-flexed",
+    "reverseCrunch:90-90": "visual-reverse-crunch-flexed",
+    "reverseCrunch:pause-haute": "visual-reverse-crunch-flexed",
+    "reverseCrunch:levier-allonge": "visual-reverse-crunch-long-lever",
+    "reverseCrunch:levier-allonge-pause": "visual-reverse-crunch-long-lever"
+  },
+  "summary": {
+    "visualMovements": 86,
+    "variants": 159,
+    "counts": {
+      "MATCH_EXACT": 37,
+      "USE_PARENT_VISUAL": 22,
+      "MATCH_ACCEPTABLE": 24,
+      "TEXT_SUFFICIENT": 3
+    },
+    "sources": {
+      "workout-guide": 44,
+      "repdb": 11,
+      "free-exercise-db": 1,
+      "custom": 5
+    },
+    "assetFiles": {
+      "workout-guide": 73,
+      "repdb": 14,
+      "free-exercise-db": 2,
+      "custom": 6,
+      "total": 95
+    },
+    "missing": 0,
+    "humanReviewRequired": 0,
+    "dedicatedVisualRequired": 0
+  }
+}

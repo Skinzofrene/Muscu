@@ -1,6 +1,6 @@
 {
   "name": "muscu-cycle",
-  "version": "2.1.0",
+  "version": "6.2.0",
   "private": true,
   "type": "module",
   "description": "Micro-séances au poids du corps, locales et hors ligne",

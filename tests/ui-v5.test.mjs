@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+
+test('aucune API de dialogue bloquante ni élément dialog ne reste dans le flux',async()=>{const app=await readFile(new URL('../dist/app.js',import.meta.url),'utf8'),html=await readFile(new URL('../dist/index.html',import.meta.url),'utf8');assert.doesNotMatch(app,/window\.(alert|confirm|prompt)\s*\(/);assert.doesNotMatch(app,/\.showModal\s*\(/);assert.doesNotMatch(html,/<dialog\b/i);assert.match(app,/class="floating-panel/);assert.doesNotMatch(app,/class="inline-panel"/);});
+test('les deux contrôles de mode utilisent le composant Muscu sans select natif',async()=>{const app=await readFile(new URL('../dist/app.js',import.meta.url),'utf8'),css=await readFile(new URL('../dist/style.css',import.meta.url),'utf8');assert.match(app,/executionModeControl\(false\)/);assert.match(app,/executionModeControl\(true\)/);assert.match(app,/action==='execution-mode-menu'/);assert.doesNotMatch(app,/<select\b/i);assert.match(css,/\.execution-mode\.compact/);});
+test('Explorer expose les huit filtres demandés et l’identité primaire nXX',async()=>{const app=await readFile(new URL('../dist/app.js',import.meta.url),'utf8');for(const label of ['Haut du corps','Tronc','Hanches','Jambes','Chevilles / pieds','Avec barre','Avec chaise','Au sol'])assert.ok(app.includes(label),label);assert.match(app,/Explorer n1 → n35/);});

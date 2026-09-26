@@ -67,9 +67,9 @@ test('la consigne courante suit exercice, bloc et variante depuis le plan actif'
   assert.equal(currentSet(state).id,'hang');
   assert.notEqual(currentSetDetails(state).cues[0],pullupCue);
   while(state.active){validateSet(state,30);if(state.active?.stage==='rest')skipRest(state);}
-  start(state,40);
+  const before=state.registry.units.find(x=>x.id==='split').variantId;
+  for(let i=0;i<4&&state.registry.units.find(x=>x.id==='split').variantId===before;i++)changeLevel(state,'split',1,50+i,'force');
+  start(state,60);
   assert.equal(currentSet(state).id,'split');
-  const before=currentSet(state).variantId;
-  for(let i=0;i<4&&currentSet(state).variantId===before;i++)changeLevel(state,'split',1,50+i,'force');
   assert.notEqual(currentSet(state).variantId,before);
 });

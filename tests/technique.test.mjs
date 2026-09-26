@@ -59,10 +59,10 @@ test('changer de variante change la technique, changer de palier la conserve',()
   assert.match(pause.technique.execution.join(' '),/pause en haut/);
 });
 
-test('les 146 variantes ont des consignes canoniques et tous les paliers pointent vers une variante valide',()=>{
-  assert.equal(VALIDATED_VARIANT_COUNT,146);
-  assert.equal(Object.keys(variantCatalog).length,146);
-  assert.equal(validateTechniqueCatalog(exercises),146);
+test('les 214 variantes V6.1 ont des consignes canoniques et tous les paliers pointent vers une variante valide',()=>{
+  assert.equal(VALIDATED_VARIANT_COUNT,214);
+  assert.equal(Object.keys(variantCatalog).length,214);
+  assert.equal(validateTechniqueCatalog(exercises),214);
   for(const [exerciseId,e]of Object.entries(exercises))for(const [modeId,m]of Object.entries(e.modes)){
     const ids=new Set(m.variants.map(v=>v.id));
     for(const v of m.variants){

@@ -1,88 +1,58 @@
-# Muscu V2
+# Muscu V6.2 — audit technique complet
 
-PWA mobile-first de micro-séances au poids du corps. Elle fonctionne sans compte, sans backend, sans abonnement et sans dépendance distante à l’exécution. Toutes les données restent dans le navigateur.
+Cette livraison ajoute un référentiel technique structuré pour les 24 mouvements de base, classe les 159 variantes techniques distinctes et corrige les héritages incohérents sans changer les prescriptions sportives. Les rapports sont disponibles dans `docs/TECHNICAL_AUDIT.md`, `docs/VARIANT_AUDIT.md`, `docs/PROGRAM_AUDIT.md`, `docs/DECISIONS_REQUIRED.md` et `docs/FINAL_REPORT.md`.
+
+V6.2 conserve le socle sportif de V6.1 et clarifie les parcours de séance : fiches d’exercice et retours s’ouvrent dans des panneaux flottants, la pause propose explicitement **Pause** ou **Arrêter le bloc**, le bloc précédent peut être consulté sans modifier le programme et **Passer le bloc** agit directement, y compris pendant une séance. Pour **Fessiers → Hypertrophie**, le travail unilatéral remplace désormais le Split Force dans le bloc B ; le bloc E reste consacré à l’extension de hanche et à l’abduction. Le réglage par défaut entièrement Force reste inchangé. Voir [docs/OBJECTIVES.md](docs/OBJECTIVES.md).
+
+PWA mobile-first locale pour le programme de musculation et la souplesse. Elle fonctionne sans compte, backend, abonnement ni dépendance distante à l’exécution. Toutes les données restent dans le navigateur.
 
 ## Lancer sur PC
 
-Double-cliquer sur `Demarrer.cmd`. Le script lance l’application sur `http://localhost:4173`.
+Double-cliquer sur `Demarrer.cmd`, puis ouvrir `http://localhost:4173`. Cette origine reste stable afin que les données locales soient retrouvées à chaque lancement. Si le port est déjà utilisé par cette même V6.2, le lanceur réutilise l’adresse ; s’il appartient à une autre application ou à une ancienne version, le démarrage s’arrête avec un message explicite au lieu de changer silencieusement de port.
 
-Prérequis : Node.js 20 ou une installation Codex fournissant son environnement Node. Aucun `npm install` n’est nécessaire.
+Prérequis : Node.js 20. Aucun `npm install` n’est nécessaire. Alternative : `node server.mjs`.
 
-Alternative :
+## Navigation
 
-```text
-node server.mjs
-```
+- **Programme** conserve le cycle musculaire, les paliers et les modes Qualité, Express, Densité et Hybride.
+- **Souplesse** propose les routines Complète, Complète courte, Haut du corps, Hanches & jambes, Récupération légère et Explorer.
+- **Progression** gère les paliers et les modes sportifs Force, Endurance et Puissance.
+- **Historique** propose Tout, Musculation et Souplesse, puis Vue d’ensemble, Exercices et Séances, avec Aujourd’hui, 7 jours, 30 jours et Tout.
 
-## Installer sur iPhone
+Souplesse utilise exactement les exercices `n1` à `n35`. Les 10 pages de référence sont stockées localement, associées au bon numéro et mises en cache hors ligne. Une miniature ouvre un viewer interne plein écran zoomable sans arrêter le chrono. Le retour à la position ou au côté précédent permet de corriger une validation sans créer de doublon.
 
-1. Publier le dossier `dist/` sur GitHub Pages.
-2. Ouvrir l’adresse dans Safari une première fois avec une connexion.
-3. Toucher Partager → Sur l’écran d’accueil.
-4. L’application devient disponible hors ligne après sa première installation.
+Une routine Souplesse ne complète aucun bloc, ne change aucun palier et n’avance jamais le cycle musculaire. Il n’existe ni niveau ni progression Souplesse.
 
-## Publier gratuitement sur GitHub Pages
+## Scheduler
 
-Le workflow `.github/workflows/pages.yml` publie `dist/` automatiquement.
+- **Express** peut déplacer une série officielle compatible du cycle courant.
+- **Densité** peut proposer du Renforcement léger, de la Mobilité ou un choix Mixte pendant le repos.
+- **Hybride** privilégie une série officielle compatible, puis utilise le type complémentaire choisi.
 
-1. Créer un dépôt GitHub et y déposer le projet complet.
-2. Envoyer la branche principale sur GitHub.
-3. Dans Settings → Pages, choisir **GitHub Actions**.
-4. Attendre la fin du workflow Pages puis ouvrir l’adresse indiquée.
+La protection prospective contrôle l’exercice en récupération, la prochaine unité et la deuxième unité. La Mobilité automatique utilise seulement les pools nXX documentés, évite les quatre derniers numéros proposés, pénalise les zones récentes et préfère le repos passif lorsqu’aucun choix suffisamment varié n’est sûr.
 
-Les chemins sont relatifs : l’application fonctionne aussi sous un sous-dossier de type `utilisateur.github.io/depot/`.
+Le bouton visible **Passer le bloc** permet de passer directement le bloc courant, avant ou pendant une séance. Les unités restantes deviennent `skipped`, disparaissent d’Express et d’Hybride et ne créent ni volume, ni progression, ni consommation de rotation. Un passage vierge ne crée pas d’historique ; après des séries validées, l’historique interrompu conserve uniquement les résultats réels. Tant que le cycle n’a pas avancé, **Réouvrir le bloc** restaure exactement les mêmes IDs en `pending`.
 
-## Utilisation
+## Profils, sauvegardes et migration
 
-- **Programme** affiche le prochain bloc et des contrôles `− / +` par exercice.
-- **Progression** permet de gérer les paliers et, pour les grandes lignes, Force / Endurance / Puissance séparément.
-- Une fiche exercice s’ouvre uniquement sur action de l’utilisateur et rassemble les informations textuelles de la variante : position, exécution, erreurs à éviter et critère d’arrêt.
-- Pendant une séance, `− Palier +` reste disponible. Les séries validées ne sont jamais réécrites ; seules les séries restantes sont recomposées.
-- **Historique** propose Vue d’ensemble, Exercices et Séances avec des périodes Aujourd’hui, 7 jours, 30 jours et Tout. Les statistiques utilisent uniquement les résultats réellement enregistrés.
-- Les changements de phase et de mode restent des suggestions confirmées manuellement.
+Principal et Test restent isolés. Import, export et sauvegarde avant reset sont conservés. Le schéma courant est 7 ; les formats V1 à V6 migrent vers ce schéma. Une migration V6 conserve les niveaux H réellement utilisés et peut initialiser Bridge, GluteSplit et Abductor depuis la variante Force lorsque H n’a encore jamais été validé. Les anciennes données Souplesse V4 sans correspondance fiable restent `legacy`.
 
-## Profils Principal et Test
+## PWA et tests
 
-Dans Paramètres → Profil actif :
-
-- **Principal** contient la vraie progression.
-- **Test** utilise un espace séparé et affiche toujours un badge `TEST`.
-- Principal et Test restent toujours visibles dans le sélecteur. Au premier choix de Test, il peut être créé vierge ou comme copie instantanée de Principal.
-- Les actions Réinitialiser Test et Recréer depuis Principal sont séparées du sélecteur.
-- Réinitialiser Test ne touche jamais Principal.
-
-Une séance Principal en pause reste dans Principal lors d’un passage sur Test.
-
-## Sauvegarde, import et reset
-
-- **Exporter le profil actif** produit un JSON restaurable.
-- **Exporter toutes les données** inclut Principal, Test et la sauvegarde avant reset.
-- **Importer** vérifie la structure et migre les anciennes données avant de demander confirmation. Un fichier invalide n’écrase rien.
-- Le premier reset Principal crée automatiquement une **Sauvegarde avant reset**.
-- S’il existe déjà une sauvegarde, l’application demande explicitement de la remplacer, la garder ou la supprimer.
-- Cette sauvegarde peut être restaurée, exportée ou supprimée depuis Paramètres.
-
-Conserver aussi les exports hors du navigateur : effacer les données du site supprime le stockage local.
-
-## Tests
+Publier `dist/` sur un hébergement statique HTTPS pour l’installation iPhone. Le cache hors ligne est relatif au sous-chemin et inclut les 10 pages WebP.
 
 ```text
 node --test tests/*.test.mjs
 ```
 
-Les tests couvrent les migrations, profils, resets, imports, changements de palier en séance, modes, phases, douleur, alternances, fiches textuelles et fonctions hors ligne.
+Résultat avant modification de la V6 canonique : **152 tests réussis, 0 échec**.
 
-## Structure principale
+Résultat avant l’audit technique : **201 tests réussis, 0 échec**.
 
-- `dist/program.js` : programme data-driven, phases, variantes et modes.
-- `dist/technique.js` : consignes canoniques par variante et validation du catalogue.
-- `dist/engine.js` : séances, recommandations, déblocages et recomposition active.
-- `dist/storage.js` : profils, migrations, import/export et sauvegarde avant reset.
-- `dist/stats.js` : agrégations fiables de l’historique par période et exercice.
-- `dist/app.js` : interface PWA.
-- `MIGRATIONS.md` : règles de versionnement des données.
-- `TECHNIQUE.md` : séparation Variante / Palier / Mode et ajout sûr d’une variante.
+Résultat final après fermeture des décisions D01→D12 : **222 tests réussis, 0 échec**.
+
+Fichiers principaux : `dist/technical-catalog.js`, `dist/objectives.js`, `dist/objective-planner.js`, `dist/program.js`, `dist/technique.js`, `dist/scheduler.js`, `dist/engine.js`, `dist/storage.js`, `dist/app.js` et `dist/sw.js`.
 
 ## Limites volontaires
 
-Cette version utilise volontairement des fiches d’exercices entièrement textuelles. Il n’y a ni backend, compte, synchronisation, service payant, nutrition, Apple Health ni notifications système complexes.
+Les pages entières de référence sont les seuls médias Souplesse : aucune illustration IA, image individuelle d’exercice ou animation. Il n’y a ni backend, compte, synchronisation, nutrition, Apple Health ni alarme système en arrière-plan. iOS peut suspendre une PWA verrouillée ; les timestamps restent cohérents au retour au premier plan.
